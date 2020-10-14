@@ -1,2 +1,2 @@
-# ztk_api
-Python API for ZTK only for internel use
+# WARNING
+this is only for internal use (use at your own risk)
