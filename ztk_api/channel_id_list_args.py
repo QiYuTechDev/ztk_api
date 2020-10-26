@@ -8,7 +8,7 @@ from .base_args import BaseArgs
 class ChannelIdListArgs(BaseArgs):
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10001/api/open_sc_publisher_get.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_sc_publisher_get.ashx"
 
     info_type: int
     """
@@ -40,12 +40,12 @@ class ChannelIdListArgs(BaseArgs):
     每页大小
     """
 
-    relation_app: str = 'common'
+    relation_app: str = "common"
     """
     渠道推广的物料类型，示例值：common
     """
 
-    sid: str = ''
+    sid: str = ""
     """
     对应的淘客账号授权ID
     """

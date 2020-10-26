@@ -14,11 +14,11 @@ class JuHuaSuanArgs(BaseArgs):
 
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10001/api/api_all.ashx'
+        return "https://api.zhetaoke.com:10001/api/api_all.ashx"
 
     page: int = 1
     page_size: int = 20
-    sort: str = 'new'
+    sort: str = "new"
     cid: Optional[int] = None
 
-    jt: str = 'juhuasuan'
+    jt: str = "juhuasuan"

@@ -10,6 +10,7 @@ class TKLCreateResp(DataClassJsonMixin):
     参见: https://www.zhetaoke.com/user/open/open_tkl_create.aspx
     参见: https://open.taobao.com/api.htm?docId=31127&docType=2
     """
+
     #  iOS 14 版本的淘口令
     model: Optional[str] = None
     #  iOS 14 版本的淘口令

@@ -18,7 +18,7 @@ class TMallChaoShiArgs(BaseArgs):
 
     page: int = 1
     page_size: int = 20
-    sort: str = 'new'
+    sort: str = "new"
     cid: Optional[int] = None
 
     #  天猫超市商品是否单件免邮，值为1：天猫超市商品单件免邮，

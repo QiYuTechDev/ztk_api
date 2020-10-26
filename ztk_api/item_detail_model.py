@@ -9,6 +9,7 @@ class ItemDetailModel(BaseModel):
     """
     商品详情返回信息
     """
+
     cat_leaf_name: str = fields.cat_leaf_name_field
     cat_name: str = fields.cat_name_field
     item_url: str = fields.item_url_field

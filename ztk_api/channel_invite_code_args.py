@@ -14,7 +14,7 @@ class ChannelInviteCodeArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_sc_invitecode_get.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_sc_invitecode_get.ashx"
 
     # 渠道推广的物料类型，示例值：common
     relation_app: str

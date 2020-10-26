@@ -13,7 +13,7 @@ class KeywordArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/api_guanjianci.ashx'
+        return "https://api.zhetaoke.com:10001/api/api_guanjianci.ashx"
 
     page: int = 1
     page_size: int = 10

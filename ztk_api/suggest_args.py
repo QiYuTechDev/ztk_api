@@ -13,6 +13,6 @@ class SuggestArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/api_suggest.ashx'
+        return "https://api.zhetaoke.com:10001/api/api_suggest.ashx"
 
     content: str

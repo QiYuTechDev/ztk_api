@@ -14,13 +14,13 @@ class NineNineArgs(BaseArgs):
 
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10001/api/api_all.ashx'
+        return "https://api.zhetaoke.com:10001/api/api_all.ashx"
 
     page: int = 1
     page_size: int = 20
-    sort: str = 'new'
+    sort: str = "new"
     cid: Optional[int] = None
 
     #  券后价价格区间，
     #  值为空：全部商品，0.0-9.9：9.9元商品，0.0-19.9：19.9元商品
-    price: str = '0.0-9.9'
+    price: str = "0.0-9.9"

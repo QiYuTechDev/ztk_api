@@ -15,7 +15,7 @@ class ChannelSaveRecordArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_sc_publisher_save.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_sc_publisher_save.ashx"
 
     # 淘宝客邀请渠道的邀请码
     inviter_code: str

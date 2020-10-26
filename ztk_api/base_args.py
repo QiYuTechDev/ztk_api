@@ -45,7 +45,7 @@ class BaseArgs(DataClassJsonMixin):
         for dk in dks:
             d.pop(dk)
 
-        d['appkey'] = appkey
+        d["appkey"] = appkey
         return parse.urlencode(d)
 
     async def to_http_url(self) -> str:
@@ -56,7 +56,7 @@ class BaseArgs(DataClassJsonMixin):
         app_key = self.ztk_app_key()
         query = self.to_http_query(app_key)
         url = self.base_url()
-        return f'{url}?{query}'
+        return f"{url}?{query}"
 
     def to_http_url_sync(self) -> str:
         """
@@ -66,4 +66,4 @@ class BaseArgs(DataClassJsonMixin):
         app_key = self.ztk_app_key()
         query = self.to_http_query(app_key)
         url = self.base_url()
-        return f'{url}?{query}'
+        return f"{url}?{query}"

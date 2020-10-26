@@ -14,13 +14,13 @@ class SearchArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10003/api/api_quanwang.ashx'
+        return "https://api.zhetaoke.com:10003/api/api_quanwang.ashx"
 
     q: str
 
     page: int = 1
     page_size: int = 20
-    sort: str = 'new'
+    sort: str = "new"
 
     youquan: Optional[int] = None
     haiwai: Optional[int] = None

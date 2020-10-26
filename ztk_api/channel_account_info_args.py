@@ -13,7 +13,7 @@ class ChannelAccountInfoArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_sc_publisher_get.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_sc_publisher_get.ashx"
 
     #  渠道推广的物料类型，示例值：common
     relation_app: str
@@ -30,4 +30,4 @@ class ChannelAccountInfoArgs(BaseArgs):
     #  类型，必选 默认为1
     info_type: int = 1
 
-    sid: str = ''
+    sid: str = ""
