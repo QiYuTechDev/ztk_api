@@ -14,7 +14,7 @@ class ItemDetailArgs(BaseArgs):
 
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10001/api/open_item_info.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_item_info.ashx"
 
     num_iids: str
     # the system will auto fill this value

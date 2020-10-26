@@ -14,7 +14,7 @@ class GaoYongArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_gaoyongzhuanlian.ashx"
 
     # 淘客PID，mm_xxx_xxx_xxx,三段格式，必须与授权的账户相同，否则出错
     pid: str
@@ -43,4 +43,4 @@ class GaoYongArgs(BaseArgs):
     signurl: int = 5
 
     # 对应的淘客账号授权ID点击查看
-    sid: str = ''
+    sid: str = ""

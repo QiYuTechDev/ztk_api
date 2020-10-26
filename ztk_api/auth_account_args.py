@@ -12,7 +12,7 @@ class AuthAccountArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return ' 接口地址：https://api.zhetaoke.com:10001/api/open_taokeshouquaninfo.ashx '
+        return " 接口地址：https://api.zhetaoke.com:10001/api/open_taokeshouquaninfo.ashx "
 
     #  第几页，每页最多返回100个
     page: Optional[int] = None
@@ -22,4 +22,4 @@ class AuthAccountArgs(BaseArgs):
     expire_day: Optional[int] = None
 
     # 对应的淘客账号授权ID
-    sid: str = ''
+    sid: str = ""

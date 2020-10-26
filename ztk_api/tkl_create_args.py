@@ -14,7 +14,7 @@ class TKLCreateArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_tkl_create.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_tkl_create.ashx"
 
     # 口令跳转目标页，如：https://uland.taobao.com/，必须以https开头，
     # 可以是二合一链接、长链接、短链接等各种淘宝高佣链接；
@@ -38,7 +38,7 @@ class TKLCreateArgs(BaseArgs):
 
     #  口令弹框内容，长度大于5个字符，如：美美小编精心推荐。
     #  尽量不要带特殊符号或特殊词，否则生成的淘口令手淘里可能打不开。
-    text: str = '淘过易购APP精选推荐'
+    text: str = "淘过易购APP精选推荐"
 
     #  值为1或者2，
     #  表示返回淘宝联盟请求地址，
@@ -58,4 +58,4 @@ class TKLCreateArgs(BaseArgs):
     # on iOS should use type = 1
     type: int = 0
 
-    sid: str = ''
+    sid: str = ""

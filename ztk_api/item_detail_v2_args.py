@@ -16,7 +16,7 @@ class ItemDetailV2Args(BaseArgs):
 
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10002/api/api_detail.ashx'
+        return "https://api.zhetaoke.com:10002/api/api_detail.ashx"
 
     tao_id: str
     code: Optional[str] = None

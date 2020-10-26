@@ -38,7 +38,7 @@ from .tmall_chao_shi_resp import TmallChaoShiResp
 from .tmall_shang_pin_args import TMallShangPinArgs
 from .tmall_shang_pin_resp import TmallShangPinResp
 
-__all__ = ['ZTKSync']
+__all__ = ["ZTKSync"]
 
 
 class ZTKSync(object):
@@ -133,7 +133,7 @@ class ZTKSync(object):
         try:
             return ItemDetailResp.from_ztk_resp(j)
         except Exception as e:
-            self._logger.bind(exec=e).error('item detail error')
+            self._logger.bind(exec=e).error("item detail error")
             raise
 
     def item_detail_v2(self, args: ItemDetailV2Args) -> ItemDetailV2Resp:
@@ -159,10 +159,10 @@ class ZTKSync(object):
         url = args.to_http_url_sync()
         j = self._do_query(url)
         if isinstance(j, dict):
-            if j['status'] == 200:
-                content = j['content']
+            if j["status"] == 200:
+                content = j["content"]
                 assert isinstance(content, list)
-                return list(map(lambda x: x['keywords'], content))
+                return list(map(lambda x: x["keywords"], content))
         return []
 
     def new_order(self, args: NewOrderArgs) -> dict:
@@ -198,10 +198,10 @@ class ZTKSync(object):
         url = args.to_http_url_sync()
         j = self._do_query(url)
         if not isinstance(j, dict):
-            self._logger.warn('request ztk suggest failed')
+            self._logger.warn("request ztk suggest failed")
             return None
 
-        result = j['result']
+        result = j["result"]
 
         return list(map(lambda item: item[0], result))
 

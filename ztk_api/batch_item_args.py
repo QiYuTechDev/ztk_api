@@ -14,7 +14,7 @@ class BatchItemsArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10002/api/api_detail_piliang.ashx'
+        return "https://api.zhetaoke.com:10002/api/api_detail_piliang.ashx"
 
     num_iids: str
     """
@@ -24,4 +24,4 @@ class BatchItemsArgs(BaseArgs):
     """
 
     def set_item_ids(self, ids: [str]):
-        self.num_iids = ','.join(ids)
+        self.num_iids = ",".join(ids)

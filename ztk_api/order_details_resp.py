@@ -5,7 +5,7 @@ from typing import Optional, Any, List
 
 from dataclasses_json import DataClassJsonMixin
 
-__all__ = ['OrderDetailsResp', 'OrderDto', 'TkStatusEnum']
+__all__ = ["OrderDetailsResp", "OrderDto", "TkStatusEnum"]
 
 
 class TkStatusEnum(object):
@@ -186,7 +186,7 @@ class OrderDto(DataClassJsonMixin):
             return None
 
         try:
-            return datetime.strptime(s, '%Y-%m-%d %H:%M:%S')
+            return datetime.strptime(s, "%Y-%m-%d %H:%M:%S")
         except ValueError:
             return None
 
@@ -195,7 +195,7 @@ class OrderDto(DataClassJsonMixin):
         获取订单的平台
         """
         if self.order_type is None:
-            return '--'
+            return "--"
         else:
             return self.order_type
 
@@ -235,17 +235,17 @@ class OrderDetailsResp(DataClassJsonMixin):
     results: Optional[dict]
 
     @staticmethod
-    def from_result(j: dict) -> Optional['OrderDetailsResp']:
-        resp = j['tbk_sc_order_details_get_response']
+    def from_result(j: dict) -> Optional["OrderDetailsResp"]:
+        resp = j["tbk_sc_order_details_get_response"]
         if "data" not in resp:
             return None
 
-        data = resp['data']
+        data = resp["data"]
         if not isinstance(data, dict):
             return None
 
-        if len(data['results']) == 0:
-            data['results'] = None
+        if len(data["results"]) == 0:
+            data["results"] = None
 
         return OrderDetailsResp.from_dict(data)
 
@@ -254,7 +254,7 @@ class OrderDetailsResp(DataClassJsonMixin):
             return []
 
         order_list = []
-        if 'publisher_order_dto' in self.results:
-            order_list = self.results['publisher_order_dto']
+        if "publisher_order_dto" in self.results:
+            order_list = self.results["publisher_order_dto"]
 
         return list(map(lambda x: OrderDto.from_dict(x), order_list))

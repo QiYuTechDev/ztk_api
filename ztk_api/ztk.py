@@ -39,7 +39,7 @@ from .tmall_chao_shi_resp import TmallChaoShiResp
 from .tmall_shang_pin_args import TMallShangPinArgs
 from .tmall_shang_pin_resp import TmallShangPinResp
 
-__all__ = ['ZTK']
+__all__ = ["ZTK"]
 
 
 class ZTK(object):
@@ -156,10 +156,10 @@ class ZTK(object):
         url = await args.to_http_url()
         j = await self._do_query(url)
         if isinstance(j, dict):
-            if j['status'] == 200:
-                content = j['content']
+            if j["status"] == 200:
+                content = j["content"]
                 assert isinstance(content, list)
-                return list(map(lambda x: x['keywords'], content))
+                return list(map(lambda x: x["keywords"], content))
         return []
 
     async def new_order(self, args: NewOrderArgs):
@@ -195,10 +195,10 @@ class ZTK(object):
         url = await args.to_http_url()
         j = await self._do_query(url)
         if not isinstance(j, dict):
-            self._logger.warn('request ztk suggest failed')
+            self._logger.warn("request ztk suggest failed")
             return None
 
-        result = j['result']
+        result = j["result"]
 
         return list(map(lambda item: item[0], result))
 

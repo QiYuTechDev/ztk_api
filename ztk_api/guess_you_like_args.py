@@ -14,7 +14,7 @@ class GuessYouLikeArgs(BaseArgs):
 
     @staticmethod
     def base_url():
-        return 'https://api.zhetaoke.com:10001/api/open_item_guess_like.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_item_guess_like.ashx"
 
     page: int = 1
     """

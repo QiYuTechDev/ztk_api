@@ -14,7 +14,7 @@ class NewOrderArgs(BaseArgs):
 
     @staticmethod
     def base_url() -> str:
-        return 'https://api.zhetaoke.com:10001/api/open_dingdanchaxun2.ashx'
+        return "https://api.zhetaoke.com:10001/api/open_dingdanchaxun2.ashx"
 
     start_time: str
 
@@ -69,4 +69,4 @@ class NewOrderArgs(BaseArgs):
     # 值为2返回https安全链接。
     signurl: int = 2
 
-    sid: str = ''
+    sid: str = ""

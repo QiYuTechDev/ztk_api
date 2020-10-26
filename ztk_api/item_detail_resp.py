@@ -9,6 +9,7 @@ class ItemDetailResp(DataClassJsonMixin):
     """
     商品详情返回信息
     """
+
     cat_leaf_name: str
     cat_name: str
     item_url: str
@@ -38,18 +39,18 @@ class ItemDetailResp(DataClassJsonMixin):
     kuadian_promotion_info: Optional[str] = None
 
     @staticmethod
-    def from_ztk_resp(j: dict) -> Optional['ItemDetailResp']:
-        if 'tbk_item_info_get_response' not in j:
+    def from_ztk_resp(j: dict) -> Optional["ItemDetailResp"]:
+        if "tbk_item_info_get_response" not in j:
             return None
-        j = j['tbk_item_info_get_response']
+        j = j["tbk_item_info_get_response"]
 
-        if 'results' not in j:
+        if "results" not in j:
             return None
-        j = j['results']
+        j = j["results"]
 
-        if 'n_tbk_item' not in j:
+        if "n_tbk_item" not in j:
             return None
-        j = j['n_tbk_item']
+        j = j["n_tbk_item"]
 
         if isinstance(j, list) and len(j) >= 1:
             return ItemDetailResp(**j[0])
