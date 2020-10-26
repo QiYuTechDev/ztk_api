@@ -20,5 +20,5 @@ stringcase==1.2.0
 structlog==20.1.0
 typing-extensions==3.7.4.3
 typing-inspect==0.6.0
-urllib3==1.25.10
+urllib3==1.25.11
 yarl==1.5.1
