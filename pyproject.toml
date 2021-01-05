@@ -18,7 +18,7 @@ dataclasses-json = ">=0.5,<0.6"
 structlog = ">=20,<21"
 
 aiohttp = ">=3.7,<4"
-requests = ">=2.24,<2.25"
+requests = ">=2.24,<2.26"
 
 [tool.poetry.dev-dependencies]
 black = ">=20.8b1"
