@@ -1,3 +1,4 @@
+import os
 from urllib import parse
 
 from dataclasses_json import DataClassJsonMixin
@@ -28,6 +29,9 @@ class BaseArgs(DataClassJsonMixin):
         """
         获取 折淘客的 app key
         """
+        app_key = os.getenv("ZTK_APP_KEY", None)
+        if app_key is not None:
+            return app_key
         raise NotImplemented
 
     def to_http_query(self, appkey: str) -> str:
