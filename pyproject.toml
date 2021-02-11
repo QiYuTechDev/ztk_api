@@ -16,6 +16,9 @@ structlog = ">=20,<21"
 aiohttp = ">=3.7,<4"
 requests = ">=2.25,<3"
 
+# prepare for std tbk API
+tbk_api = ">=0.2.1,<0.3"
+
 [tool.poetry.dev-dependencies]
 black = "*"
 pytest = "*"
