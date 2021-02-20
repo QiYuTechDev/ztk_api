@@ -35,4 +35,5 @@ from .tmall_chao_shi_model import TmallChaoShiModel
 from .tmall_shang_pin_args import TMallShangPinArgs
 from .tmall_shang_pin_model import TmallShangPinModel
 from .ztk import ZTK
+from .ztk_std import ZTKStd
 from .ztk_sync import ZTKSync
