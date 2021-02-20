@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ztk_api"
-version = "0.3.2"
+version = "0.3.3"
 description = "折淘客接口"
 readme = "README.md"
 homepage = "https://github.com/QiYuTechDev/ztk_api"
